@@ -1,0 +1,51 @@
+.blog-entry{
+     padding-left: 10%;
+     padding-right: 10%;
+     padding-top: 5%;
+     padding-bottom: 5%;
+     border-bottom: 1px solid transparent;
+     background-size: 100%;
+}
+
+body{
+     background-color: #000D27;
+}
+
+.blog-entry-Date{
+     color: white;
+     font-family: "League Spartan";
+     font-size: 80;
+     font-weight: bold;
+     text-align: left;
+     position: absolute;
+     
+}
+
+.blog-entry-body{
+     color:white;
+     font-size: 20;
+     line-height: 24px;
+     letter-spacing: 0%;
+     font-family: "Urbanist";
+     font-weight: normal;
+     display: flex;
+     background: none;
+     resize: none;
+     border: none;
+     white-space: pre-line;
+}
+
+.blog-entry-button{
+     cursor: pointer;
+     background-color: transparent;
+     outline: none;
+     background-repeat: no-repeat;
+     overflow: hidden;
+     border: none;
+}
+
+.blog-entry-image{
+     margin-right: 5%;
+     margin-bottom: 1.5%;
+     border-radius: 0;
+}

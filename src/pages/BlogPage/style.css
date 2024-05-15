@@ -1,0 +1,67 @@
+.blog-outer{
+     background-image: none;
+     left: 0;
+     height: 100%;
+     width: 100%;
+     margin: 0%;
+     padding: 0%;
+}
+
+body{
+     background-color: #000D27;
+}
+
+.blog-title{
+     font-family: "League Spartan";
+     font-size: 80px;
+     color: white;
+     margin-left: 3%;
+     padding-top: 1%; /*this creates white gap for some reason*/
+}
+
+.blog-entry-box{
+     border-radius: 15px;
+     background: #3C6AA6;
+     width: 92%;
+     height: 242px;
+     margin-left: 3%;
+     margin-bottom: 3%;
+}
+
+.blog-image-container{
+     height: 242px;
+     float: left;
+}
+
+.blog-text-container{
+     flex:content;
+     padding: 12px;
+     position: relative;
+     left: 3%;
+     margin-right: 10%;
+}
+
+
+.blog-entry-date{
+     color:white;
+     font-family: "League Spartan";
+     font-size: 40px;
+     font-weight: 800;
+}
+
+.blog-entry-preview{
+     color:white;
+     font-family: "League Spartan";
+     font-size: 20px;
+}
+
+.blog-entry-link{
+     cursor: pointer;
+     color: white;
+}
+
+img{
+     border-radius: 15px 0 0 15px;
+     height: 242px;
+}
+
