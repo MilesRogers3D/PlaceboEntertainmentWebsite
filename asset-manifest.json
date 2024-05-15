@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.57fa65a5.css",
-    "main.js": "/static/js/main.26d441c1.js",
+    "main.js": "/static/js/main.3b0a711e.js",
     "static/js/453.41cfa44f.chunk.js": "/static/js/453.41cfa44f.chunk.js",
     "static/media/liquid3.jpg": "/static/media/liquid3.87e8914590286df02eb4.jpg",
     "static/media/liquid2.jpg": "/static/media/liquid2.c32e509d325d125327e4.jpg",
@@ -10,11 +10,11 @@
     "index.html": "/index.html",
     "static/media/Arrow 1.svg": "/static/media/Arrow 1.16d42f5d1c52fa9cb3f81450a83d3c32.svg",
     "main.57fa65a5.css.map": "/static/css/main.57fa65a5.css.map",
-    "main.26d441c1.js.map": "/static/js/main.26d441c1.js.map",
+    "main.3b0a711e.js.map": "/static/js/main.3b0a711e.js.map",
     "453.41cfa44f.chunk.js.map": "/static/js/453.41cfa44f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.57fa65a5.css",
-    "static/js/main.26d441c1.js"
+    "static/js/main.3b0a711e.js"
   ]
 }
