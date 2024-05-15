@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/PlaceboEntertainmentWebsite/static/css/main.9c98c992.css",
-    "main.js": "/PlaceboEntertainmentWebsite/static/js/main.2b6fd8ea.js",
+    "main.js": "/PlaceboEntertainmentWebsite/static/js/main.f171e88a.js",
     "static/js/453.41cfa44f.chunk.js": "/PlaceboEntertainmentWebsite/static/js/453.41cfa44f.chunk.js",
     "static/media/liquid3.jpg": "/PlaceboEntertainmentWebsite/static/media/liquid3.87e8914590286df02eb4.jpg",
     "static/media/liquid2.jpg": "/PlaceboEntertainmentWebsite/static/media/liquid2.c32e509d325d125327e4.jpg",
@@ -10,11 +10,11 @@
     "index.html": "/PlaceboEntertainmentWebsite/index.html",
     "static/media/Arrow 1.svg": "/PlaceboEntertainmentWebsite/static/media/Arrow 1.16d42f5d1c52fa9cb3f81450a83d3c32.svg",
     "main.9c98c992.css.map": "/PlaceboEntertainmentWebsite/static/css/main.9c98c992.css.map",
-    "main.2b6fd8ea.js.map": "/PlaceboEntertainmentWebsite/static/js/main.2b6fd8ea.js.map",
+    "main.f171e88a.js.map": "/PlaceboEntertainmentWebsite/static/js/main.f171e88a.js.map",
     "453.41cfa44f.chunk.js.map": "/PlaceboEntertainmentWebsite/static/js/453.41cfa44f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9c98c992.css",
-    "static/js/main.2b6fd8ea.js"
+    "static/js/main.f171e88a.js"
   ]
 }
