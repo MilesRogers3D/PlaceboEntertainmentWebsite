@@ -7,24 +7,24 @@ import GlobalNavbar from './components/GlobalNavbar/GlobalNavbar';
 import BlogPage from './pages/BlogPage/BlogPage';
 import ContactPage from './pages/ContactPage/ContactPage';
 import { BlogEntry } from './pages/BlogEntryPage/BlogEntry';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import LoadingPage from './pages/LoadingPage/LoadingPage';
 
 function App() {
      return (
-          <BrowserRouter>
+          <>
                <GlobalNavbar></GlobalNavbar>
                <Routes>
-                    <Route path="/" element={<HomePage />}/>
-                    <Route path="about" element={<AboutPage />}/>
-                    <Route path="home" element={<HomePage />}/>
-                    <Route path="work" element={<WorkPage />}/>
-                    <Route path="blog" element={<BlogPage />}/>
-                    <Route path="contact" element={<ContactPage />}/>
+                    <Route path="/" element={<HomePage />} />
+                    <Route path="about" element={<AboutPage />} />
+                    <Route path="home" element={<HomePage />} />
+                    <Route path="work" element={<WorkPage />} />
+                    <Route path="blog" element={<BlogPage />} />
+                    <Route path="contact" element={<ContactPage />} />
                     <Route path="blogEntry/:blogID" element={<BlogEntry />} />
-                    <Route path="loading" element={<LoadingPage/>}/>
+                    <Route path="loading" element={<LoadingPage />} />
                </Routes>
-          </BrowserRouter>
+          </>
      );
 }
 

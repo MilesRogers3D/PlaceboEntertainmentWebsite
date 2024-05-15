@@ -40,7 +40,7 @@ export const BlogPage = () => {
           </div>
           <div className="blog-text-container">
                <h1 className="blog-entry-date">{title}</h1>
-               <p className="blog-entry-preview">{preview} <a className="blog-entry-link" href={`/blogEntry/${date}`}>Read More</a></p>
+               <p className="blog-entry-preview">{preview} <a className="blog-entry-link" href={`#/blogEntry/${date}`}>Read More</a></p>
           </div>
      </div>;
 

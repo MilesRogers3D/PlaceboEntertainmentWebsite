@@ -13,11 +13,11 @@ export const GlobalNavbar = () => {
                               <img className="logo" src={logo}></img>
                          </Navbar.Brand>
                          <div className="text-wrapper">
-                              <Nav.Link className="navBarLink" href="home">Home</Nav.Link>
-                              <Nav.Link className="navBarLink" href="about">About</Nav.Link>
-                              <Nav.Link className="navBarLink" href="work">Work</Nav.Link>
-                              <Nav.Link className="navBarLink" href="blog">Blog</Nav.Link>
-                              <Nav.Link className="button" href="contact">Contact</Nav.Link>
+                              <Nav.Link className="navBarLink" href="#home">Home</Nav.Link>
+                              <Nav.Link className="navBarLink" href="#about">About</Nav.Link>
+                              <Nav.Link className="navBarLink" href="#work">Work</Nav.Link>
+                              <Nav.Link className="navBarLink" href="#blog">Blog</Nav.Link>
+                              <Nav.Link className="button" href="#contact">Contact</Nav.Link>
                          </div>
                     </Container>
                </Navbar>
