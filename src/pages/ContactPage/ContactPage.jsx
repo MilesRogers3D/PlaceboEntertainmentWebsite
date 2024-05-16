@@ -12,6 +12,7 @@ export const ContactPage = () => {
 
                     <input type="hidden" name="_next" value="https://placeboentertainment.com"></input>
                     <label className="contact-label">Message*</label>
+                    <input type="hidden" name="_autoresponse" value="Thank you for contacting Placebo Entertainment, we will be in touch shortly!"></input>
                     <textarea className="contact-input-message" name="message"></textarea>
                     <input type="submit" value="Submit" className="contact-submit"></input>
                </form>
