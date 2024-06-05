@@ -1,3 +1,5 @@
+
+
 .navbar {
      background-color: #f2a766;
      padding: 0;
@@ -6,7 +8,7 @@
 
 .navBarLink {
      /* margin: 40px; */
-     all: unset;
+     /* all: unset; */
      font-family: "League Spartan", Helvetica;
      margin-left: 40px;
      color: #000d27;
@@ -16,6 +18,10 @@
      right: 20px;
      cursor: pointer;
      white-space: nowrap;
+}
+
+html {
+     font-size: 20px;
 }
 
 .navbar .logo {

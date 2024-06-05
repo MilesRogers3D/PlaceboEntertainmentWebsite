@@ -34,7 +34,7 @@ export const GlobalNavbar = () => {
                               <Nav.Link href="#about" className="navBarLink">About</Nav.Link>
                               <Nav.Link href="#work" className="navBarLink">Work</Nav.Link>
                               <Nav.Link href="#blog" className="navBarLink">Blog</Nav.Link>
-                              <Nav.Link href="#contact" className="button">Contact</Nav.Link>
+                              <Nav.Link className="button" href="#contact">Contact</Nav.Link>
                          </Nav>
                     </Navbar.Collapse>
                </Container>
