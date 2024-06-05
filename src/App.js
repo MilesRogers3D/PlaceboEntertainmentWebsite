@@ -13,7 +13,7 @@ import LoadingPage from './pages/LoadingPage/LoadingPage';
 function App() {
      return (
           <>
-               <GlobalNavbar></GlobalNavbar>
+               <GlobalNavbar/>
                <Routes>
                     <Route path="/" element={<HomePage />} />
                     <Route path="about" element={<AboutPage />} />

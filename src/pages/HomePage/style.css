@@ -1,43 +1,36 @@
-.home-outer{
-     display: table;
-     position: absolute;
-     top: 128;
-     left: 0;
-     height: 100%;
-     width: 100%;
-     background-color: #251f1f;
-     background-image: url("liquid3.jpg");
-     background-size: cover;
-     opacity: 1;
-}
-
-.home-middle{
+.home-outer {
      display: table-cell;
+     text-align: center;
      vertical-align: middle;
+     /* top: 50%; */
+     /* -webkit-transform: translate(-50%, -50%); */
+     /* transform: translate(-50%, -50%); */
 }
 
-.home-inner{
-     margin-left: auto;
-     margin-right: auto;
-     width: 980px;
+.home-container {
+     background-image: url("/public/liquid3.jpg");
+     background-size: cover;
+     background-repeat: no-repeat;
+     height: 100vh;
+     width: 100%;
+     display: table;
 }
 
 .home-title {
      color: #ffffff;
      font-family: "League Spartan";
-     font-size: 80px;
+     font-size: min(8vw, 80px, 8vh);
      font-weight: 800;
-     line-height: 80px;
+     line-height: min(8vw, 80px, 8vh);
      font-optical-sizing: auto;
      font-style: normal;
-     width: 980px;
-     height: 160px;
 }
 
 .home-slogan {
      color: #ffffff;
      font-family: "Urbanist";
-     font-size: 40px;
-     line-height: 60px;
+     font-size: min(4vw, 40px);
+     line-height: min(6vw, 60px);
+     align-self: center;
+     font-optical-sizing: auto;
 }
-

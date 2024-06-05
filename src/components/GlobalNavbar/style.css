@@ -1,20 +1,25 @@
 .navbar {
      background-color: #f2a766;
-     height: 128px;
-     position: relative;
-     width: 100%;
+     padding: 0;
+     position: sticky;
 }
 
 .navBarLink {
-     margin: 40px;
+     /* margin: 40px; */
+     all: unset;
+     font-family: "League Spartan", Helvetica;
+     margin-left: 40px;
      color: #000d27;
      text-decoration: none;
      font-size: 20px;
      font-weight: 400;
+     right: 20px;
+     cursor: pointer;
+     white-space: nowrap;
 }
 
 .navbar .logo {
-     height: 128px;
+     height: min(128px, 15vw);
 }
 
 .navbar .text-wrapper {
@@ -26,20 +31,46 @@
      letter-spacing: 0;
      position: absolute;
      text-align: right;
-     top: 50px;
      white-space: nowrap;
 }
 
 .navbar .button {
-     all: unset;
-     align-items: center;
+     /* all: unset; */
+     /* align-items: center; */
+     /* display: table; */
      background-color: #3c6aa6;
      border: 1px solid;
      border-color: #3c6aa680;
      border-radius: 100px;
      box-sizing: border-box;
-     padding: 8px 16px;
-     margin: 40px;
+     /* padding: 8px 16px; */
+     margin-left: 40px;
      color: white;
      cursor: pointer;
+}
+
+.navbar .button:hover {
+     color:white;
+}
+
+
+
+@media screen and (width <=991px) {
+     .navbar .button {
+          /* all: unset; */
+          background-color: unset;
+          border: none;
+          color: inherit;
+          font-family: "League Spartan", Helvetica;
+          margin-left: 40px;
+          /* color: #000d27; */
+          text-decoration: none;
+          font-size: inherit;
+          font-weight: 400;
+          right: 20px;
+          cursor: pointer;
+          white-space: nowrap;
+     }
+
+
 }

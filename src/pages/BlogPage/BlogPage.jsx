@@ -34,10 +34,9 @@ export const BlogPage = () => {
           return result;
      }
 
-     const blogEntry = (date, title, preview) => <div className="blog-entry-box">
-          <div className="blog-image-container">
-               <img src={entryImage}></img>
-          </div>
+     const blogEntry = (date, title, preview) => 
+     <div className="blog-entry-box">
+          <img className="blog-image-container" src={entryImage}></img>
           <div className="blog-text-container">
                <h1 className="blog-entry-date">{title}</h1>
                <p className="blog-entry-preview">{preview} <a className="blog-entry-link" href={`#/blogEntry/${date}`}>Read More</a></p>

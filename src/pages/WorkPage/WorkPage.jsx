@@ -3,11 +3,9 @@ import "./style.css";
 
 export const HomePage = () => {
      return (
-          <div className="work-outer">
-               <div className="work-middle">
-                    <div className="work-inner">
-                         <h1 className="work-title">STAY TUNED FOR OUR UPCOMING PROJECTS</h1>
-                    </div>
+          <div className="about-container">
+               <div className="about-outer">
+                    <h1 className="about-title">STAY TUNED TO LEARN ABOUT UPCOMING PROJECTS</h1>
                </div>
           </div>
      );
