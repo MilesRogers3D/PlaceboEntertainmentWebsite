@@ -31,6 +31,7 @@ export const BlogPage = () => {
                const preview = entry.preview_body;
                result.push(blogEntry(date, title, preview));
           }
+          result.reverse();
           return result;
      }
 
