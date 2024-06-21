@@ -11,17 +11,17 @@ body{
      background-color: #000D27;
 }
 
-.blog-entry-Date{
+h1{
      color: white;
      font-family: "League Spartan";
      font-size: 80;
+     line-height: 74px;
      font-weight: bold;
      text-align: left;
-     position: absolute;
-     
+     /* position: absolute; */
 }
 
-.blog-entry-body{
+p{
      color:white;
      font-size: 20;
      line-height: 24px;
