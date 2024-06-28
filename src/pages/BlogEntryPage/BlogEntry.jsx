@@ -62,7 +62,6 @@ export const BlogEntry = () => {
           getData();
      }, [])
 
-
      const buildGallery = () => {
           if (retrievedData.images.length === 0) {
                return <></>
@@ -83,7 +82,14 @@ export const BlogEntry = () => {
      }
      return (
           <div className="blog-entry">
-               <Markdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw]}>{foundMDPage}</Markdown>
+               <Markdown remarkPlugins={[remarkGfm]} components={{
+                    h1(props){
+                         return <h1 className="blog-header"{...props}/>
+                    },
+                    p(props){
+                         return <p className="blog-paragraph"{...props}/>
+                    }
+               }}rehypePlugins={[rehypeRaw]}>{foundMDPage}</Markdown>
                <div>
                     {buildGallery()}
                </div>
