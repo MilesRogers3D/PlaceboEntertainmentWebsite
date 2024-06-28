@@ -19,6 +19,11 @@
                "title" : "MAY 31ST, 2024 - Missed Deadlines",
                "preview_body" : "So remember when Rachel said we formed cross functional teams for this project? Say, two weeks ago? Well, they have certainly given us some valuable insight on the early stages of production… and by that, I mean we have moved back our first milestone deadline, and temporarily disbanded our functional teams.",
                "entry_file" : "05312024.md"
+          },
+          "06072024": {
+               "title": "JUNE 14TH, 2024 - First Playable!",
+               "preview_body" : "And finally here is First Playable! Which is the perfect time to walk you guys through our game play flow chart!",
+               "entry_file" : "06072024.md"
           }
      }
 }

@@ -1,6 +1,6 @@
 here's how to do an image:
 [<img src="blog524/bgnd 2.png" width="200" height="200"/>](blog524/bgnd%202.png)
-
+ &nbsp; a space
 # A big title
 
 normal text
