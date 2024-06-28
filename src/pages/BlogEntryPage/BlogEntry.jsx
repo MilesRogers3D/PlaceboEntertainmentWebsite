@@ -62,17 +62,6 @@ export const BlogEntry = () => {
           getData();
      }, [])
 
-     const buildGallery = () => {
-          if (retrievedData.images.length === 0) {
-               return <></>
-          }
-          let result = [];
-          retrievedData.images.forEach(element => {
-               result.push({ original: element });
-          });
-          return <ReactImageGallery items={result} />
-     }
-
      if (!dataLoaded) {
           return <LoadingPage />;
      }
@@ -90,9 +79,6 @@ export const BlogEntry = () => {
                          return <p className="blog-paragraph"{...props}/>
                     }
                }}rehypePlugins={[rehypeRaw]}>{foundMDPage}</Markdown>
-               <div>
-                    {buildGallery()}
-               </div>
                <button className="blog-entry-button" onClick={() => setToBlogPage(true)}><img src={arrow}></img></button>
           </div>
      )

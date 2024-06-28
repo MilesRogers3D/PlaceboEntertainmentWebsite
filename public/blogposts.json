@@ -2,35 +2,21 @@
      "blog_entries": {
           "05102024": {
                "title": "MAY 10TH, 2024 - And We're Off!",
-               "images": [],
                "preview_body": "Placebo Entertainment has officially kicked off, but before I talk about what we are working on, I want to talk about how we got here.",
                "entry_file" : "05102024.md"
           },
           "05172024": {
                "title": "MAY 17TH, 2024 - We are officially a company!",
-               "images": [],
                "preview_body": "Nothing like finding out that your LLC paperwork went through like getting a letter letting you know you need to do your taxes. ",
                "entry_file": "05172024.md"
           },
           "05242024": {
                "title": "MAY 24TH, 2024 - Art Team Feature",
-               "images": ["blog524/bgnd 2.png",
-               "blog524/Coward_Concept_Sheet_4.png",
-               "blog524/Coward_Concept_Sheet_5.png",
-               "blog524/Goop_Concept_Sheet_1.png",
-               "blog524/GoopFinal-Color.png",
-               "blog524/image.png",
-               "blog524/RobotConceptingColorPalette.png",
-               "blog524/RobotConceptingRound1.png",
-               "blog524/RobotConceptingRound3.png",
-               "blog524/RobotFinal-Color.png",
-               "blog524/RobtConceptingRound2.png"],
                "preview_body": "Hey everyone this week we want to feature our art team, so here’s them talking about the work they’ve been doing so far!",
                "entry_file" : "05242024.md"
           },
           "05312024" : {
                "title" : "MAY 31ST, 2024 - Missed Deadlines",
-               "images" : [],
                "preview_body" : "So remember when Rachel said we formed cross functional teams for this project? Say, two weeks ago? Well, they have certainly given us some valuable insight on the early stages of production… and by that, I mean we have moved back our first milestone deadline, and temporarily disbanded our functional teams.",
                "entry_file" : "05312024.md"
           }
