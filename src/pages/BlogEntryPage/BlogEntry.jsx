@@ -1,7 +1,7 @@
 import "./style.css";
 import arrow from "./Arrow 1.svg"
 import { Navigate, useParams } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useState, useEffect} from "react";
 import LoadingPage from "../LoadingPage/LoadingPage";
 import ReactImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
@@ -32,7 +32,7 @@ export const BlogEntry = () => {
                const markdown = (
                     await fetch(entryPage).then(response => response.text()).then(result => setFoundMDPage(result))
                );
-          
+
                setDataLoaded(true);
                // setDataLoaded(true);
           }
@@ -56,6 +56,7 @@ export const BlogEntry = () => {
           // })
      }
 
+
      let date = useParams();
 
      useEffect(() => {
@@ -72,13 +73,16 @@ export const BlogEntry = () => {
      return (
           <div className="blog-entry">
                <Markdown remarkPlugins={[remarkGfm]} components={{
-                    h1(props){
-                         return <h1 className="blog-header"{...props}/>
+                    h1(props) {
+                         return <h1 className="blog-header"{...props} />
                     },
-                    p(props){
-                         return <p className="blog-paragraph"{...props}/>
+                    p(props) {
+                         return <p className="blog-paragraph"{...props} />
+                    }, 
+                    img(props){
+                         return <img {...props} style={{ maxWidth: '100%' }} />
                     }
-               }}rehypePlugins={[rehypeRaw]}>{foundMDPage}</Markdown>
+               }} rehypePlugins={[rehypeRaw]}>{foundMDPage}</Markdown>
                <button className="blog-entry-button" onClick={() => setToBlogPage(true)}><img src={arrow}></img></button>
           </div>
      )
