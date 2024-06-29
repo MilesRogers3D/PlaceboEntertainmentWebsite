@@ -43,8 +43,6 @@ body{
      border: none;
 }
 
-.blog-entry-image{
-     margin-right: 5%;
-     margin-bottom: 1.5%;
-     border-radius: 0;
+.blog-image{
+    max-width: 100%;
 }

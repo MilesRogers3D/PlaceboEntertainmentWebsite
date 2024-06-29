@@ -80,7 +80,7 @@ export const BlogEntry = () => {
                          return <p className="blog-paragraph"{...props} />
                     }, 
                     img(props){
-                         return <img {...props} style={{ maxWidth: '100%' }} />
+                         return <img {...props} className="blog-image" />
                     }
                }} rehypePlugins={[rehypeRaw]}>{foundMDPage}</Markdown>
                <button className="blog-entry-button" onClick={() => setToBlogPage(true)}><img src={arrow}></img></button>
