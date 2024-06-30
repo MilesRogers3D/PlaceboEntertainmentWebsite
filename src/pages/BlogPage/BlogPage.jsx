@@ -1,10 +1,14 @@
 import "./style.css"
-import entryImage from "./liquid2.jpg"
 import { useEffect, useState } from "react";
-import LoadingPage from "../LoadingPage/LoadingPage";
+import { BlogEntry } from "../BlogEntryPage/BlogEntry";
 
 
 export const BlogPage = () => {
+
+     useEffect(() => {
+          getData();
+     }, [])
+
      const getData = () => {
           fetch('blogposts.json', {
                headers: {
@@ -14,47 +18,40 @@ export const BlogPage = () => {
           }).then(function (response) {
                return response.json();
           }).then(function (myJson) {
-               setRetrievedData(myJson);
-               setFetchComplete(true);
+               let entries = [];
+               for (const date in myJson.blog_entries) {
+                    const entry = myJson.blog_entries[date];
+                    entries.push(entry);
+               }
+               setEntryList(entries);
           })
      }
 
-     const [retrievedData, setRetrievedData] = useState('');
-     const [fetchComplete, setFetchComplete] = useState(false);
 
+     const [entryList, setEntryList] = useState([]);
 
-     const createEntries = () => {
-          let result = [];
-          for (const date in retrievedData.blog_entries) {
-               const entry = retrievedData.blog_entries[date];
-               const title = entry.title;
-               const preview = entry.preview_body;
-               result.push(blogEntry(date, title, preview));
-          }
-          result.reverse();
-          return result;
-     }
-
-     const blogEntry = (date, title, preview) => 
-     <div className="blog-entry-box">
-          <img className="blog-image-container" src={entryImage}></img>
-          <div className="blog-text-container">
-               <h1 className="blog-entry-date">{title}</h1>
-               <p className="blog-entry-preview">{preview} <a className="blog-entry-link" href={`#/blogEntry/${date}`}>Read More</a></p>
-          </div>
-     </div>;
-
-     useEffect(() => {
-          getData();
-     }, [])
+     const blogEntries = entryList.map((filename) => (<BlogEntry key={filename} entry_file={filename} />)).reverse();
 
 
      return (
-          
-          <div className="blog-outer">
+          <>
                <h1 className="blog-title">DEVELOPER'S BLOG</h1>
-               {createEntries()}
-          </div>
+               <div className="blog-outer">
+                    <div className="blog-entry-container">
+                         {blogEntries}
+                    </div>
+                    <div className="blog-sidebar-container">
+                         <h1 className="blog-sidebar-header">Our Mission</h1>
+                         <p className="blog-sidebar-paragraph">What started as an idea between friends became an indie game studio. We are dedicated to weaving story and style together in new, compelling ways. </p>
+                         <h1 className="blog-sidebar-header">Our Socials</h1>
+                         <a className="blog-sidebar-paragraph" href="https://x.com/placeboent">Twitter</a><br/>
+                         <a href="https://www.linkedin.com/company/placeboentertainment/" className="blog-sidebar-paragraph">Linkedin</a><br/>
+                         <a className="blog-sidebar-paragraph">Anywhere Else</a><br/>
+                         <h1 className="blog-sidebar-header">Buy Our Stuff!</h1>
+                         <p className="blog-sidebar-paragraph">Or don't. You have free will. You do have free will, right?</p>
+                    </div>
+               </div>
+          </>
 
      );
 };

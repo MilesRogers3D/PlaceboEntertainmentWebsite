@@ -14,19 +14,21 @@ body{
 .blog-header{
      color: white;
      font-family: "League Spartan";
-     font-size: 80;
-     line-height: 74px;
-     font-weight: bold;
+     font-size: min(40px, 8vw);
+     line-height: min(40px, 8vw);
+     font-weight: 800;
      text-align: left;
+     display: flex;
 }
 
 .blog-paragraph{
      color:white;
-     font-size: 20;
-     line-height: 24px;
+     font-size: min(20px, 4vw);
+     line-height: min(24px, 7vw);
      letter-spacing: 0%;
      font-family: "Urbanist";
-     font-weight: normal;
+     font-weight: 400;
+     font-style: normal;
      display: flex;
      background: none;
      resize: none;
@@ -45,4 +47,5 @@ body{
 
 .blog-image{
     max-width: 100%;
+    border-radius: 4px;
 }

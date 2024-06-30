@@ -5,20 +5,71 @@
      width: 100%;
      margin: 0%;
      padding: 0%;
+     display: grid;
+     grid:
+     "body sidebar" 1fr
+     / 70% 30%; 
 }
 
-body {
-     background-color: #000D27;
-}
+
 
 .blog-title {
      font-family: "League Spartan";
      font-size: min(80px, 12vw);
+     font-weight: 700;
+     line-height: normal;
      color: white;
-     margin-left: 3%;
-     padding-top: 2%;
+     /* margin-left: 3%; */
+     padding-top: 4%;
+     padding-bottom: 4%;
+     background-color: #3C6AA6;
+     text-align: center;
      /*this creates white gap for some reason*/
 }
+
+.blog-entry-container{
+     /* background-color: red; */
+     /* width: 50%; */
+     grid-area: body;
+}
+
+.blog-sidebar-container{
+     /* background-color: blue; */
+     grid-area: sidebar;
+     top: 0;
+     right: 0;
+     margin-left: 4%;
+     margin-right: 8%;
+     padding-top: 24%;
+     align-self: start;
+     position: sticky;
+     /* width: 50%; */
+}
+
+.blog-sidebar-header{
+     color: rgba(255, 232, 230, 0.80);
+     font-family: "League Spartan";
+     font-size: min(40px, 8vw);
+     font-style: normal;
+     font-weight: 800;
+     line-height: min(80px, 8vw);
+     padding-top: 4%;
+}
+
+.blog-sidebar-paragraph{
+     color: rgba(255, 232, 230, 0.80);
+     font-family: "Urbanist";
+     font-size: min(20px, 10vw);
+     font-style: normal;
+     font-weight: 400;
+     line-height: min(24px, 4.5vw);
+     padding-bottom: 4%;
+     text-decoration: none;
+}
+
+/* .blog-entry{
+     padding-top: 8%;    
+} */
 
 .blog-entry-box {
      border-radius: 15px;
