@@ -1,30 +1,37 @@
 .about-outer {
-     display: table-cell;
-     text-align: center;
-     vertical-align: middle;
-     /* top: 50%; */
-     /* -webkit-transform: translate(-50%, -50%); */
-     /* transform: translate(-50%, -50%); */
+     height: 100vh;
+     width: 100%;
 }
 
 .about-container {
-     background-image: url("/public/liquid3.jpg");
-     background-size: cover;
-     background-repeat: no-repeat;
-     height: 100vh;
-     width: 100%;
-     display: table;
+     width: 90%;
+     justify-items: center;
+     /* align-items: center; */
+     text-align: center;
+     /* vertical-align: middle; */
+     display: grid;
+     grid-template-columns: repeat(2, minmax(400px, 1fr));
+     grid-template-rows: masonry;
+     gap: 5vw;
+     /* align-items: center; */
+     margin: auto;
+     border-collapse: collapse;
+     table-layout: fixed;
+     flex-wrap: wrap;
 }
 
 
 .about-title {
-     color: #ffffff;
      font-family: "League Spartan";
-     font-size: min(8vw, 80px, 8vh);
-     font-weight: 800;
-     line-height: min(8vw, 80px, 8vh);
-     font-optical-sizing: auto;
-     font-style: normal;
+     font-size: min(80px, 12vw);
+     font-weight: 700;
+     line-height: normal;
+     color: white;
+     /* margin-left: 3%; */
+     padding-top: 4%;
+     padding-bottom: 4%;
+     background-color: #3C6AA6;
+     text-align: center;
 }
 
 .about-slogan {
@@ -34,4 +41,51 @@
      line-height: min(6vw, 60px);
      align-self: center;
      font-optical-sizing: auto;
+}
+
+.about-entry-container{
+     background-color: #f2a766;
+     /* width: min-content; */
+     /* width: 100%; */
+     /* display: flex; */
+     padding: 10px;
+     margin-bottom: 10px;
+     border-radius: 8px;
+     /* align-self:center; */
+     vertical-align: top;
+     block-size: min-content;
+}
+
+.about-entry-description{
+     color: black;
+     font-size: 20px;
+     font-style: normal;
+     font-family: 'Urbanist';
+     font-weight: 400;
+     /* line-height: 80%; */
+     text-align: center;
+     padding-left: 4px;
+}
+
+.about-entry-title{
+     color: black;
+     font-size: 20px;
+     font-style: normal;
+     font-family: 'Urbanist';
+     font-weight: 400;
+     line-height: 80%;
+     background-color: #f2a766
+}
+
+.about-entry-picture{
+     padding-bottom: 2%;
+     border-radius: 8px;
+     width: 270px;
+     height: 270px;
+}
+
+@media only screen and (max-width: 850px){
+     .about-container{
+          grid-template-columns: 1fr;
+     }
 }
