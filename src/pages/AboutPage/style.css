@@ -4,7 +4,7 @@
 }
 
 .about-container {
-     width: 90%;
+     width: 80%;
      justify-items: center;
      /* align-items: center; */
      text-align: center;
@@ -90,10 +90,20 @@
      /* padding-bottom: 2%; */
      width: 270px;
      height: 270px;
+     border-style: solid;
+     border-color: #f2a766;
+     border-width: 8px;
+     object-fit: cover;
 }
 
 @media only screen and (max-width: 850px){
      .about-container{
           grid-template-columns: 1fr;
+     }
+}
+
+@media only screen and (min-width: 1250px) {
+     .about-container{
+          width: 60%;
      }
 }

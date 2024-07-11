@@ -14,16 +14,13 @@ export const BlogEntry = ({entry_file}) => {
      const [dataLoaded, setDataLoaded] = useState(false);
      const [foundMDPage, setFoundMDPage] = useState('');
 
-     const getData = () => {
+     const getData = async () => {
           const dataFetch = async () => {
-               const markdown = (
-                    await fetch(entry_file).then(response => response.text()).then(result => setFoundMDPage(result))
-               );
-
+               await fetch(entry_file).then(response => response.text()).then(result => setFoundMDPage(result))
                setDataLoaded(true);
           }
 
-          dataFetch();
+          await dataFetch();
      }
 
 
