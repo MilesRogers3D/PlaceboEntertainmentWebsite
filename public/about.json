@@ -2,9 +2,9 @@
     "staff": [
         {
             "name": "Rachel Rudy",
-            "title": "Founder, Producer",
-            "description": "dfs",
-            "image": "fsadf"
+            "title": "Founder and Producer",
+            "description": "Rachel Founded Placebo Entertainment with the hopes of replicating the indie experience before her last year on college. Drawn into games by their storytelling potential, she can often be found nose deep in a good book or playing table top RPGs.",
+            "image": "headshots/rachel.jpg"
         },
         {
             "name": "Caden Sheahan",
@@ -15,8 +15,20 @@
         {
             "name": "Andrea Swihart-DeCoster",
             "title": "Lead Game Engineer",
-            "description": "Andrea Swihart-DeCoster is a game engineer with an interest in technical production. She is completing her final year pursuing a Bachelor of Science in Game Design with a minor in Computer Science - Game Technology.",
+            "description": "Andrea Swihart-DeCoster is a game engineer with an interest in technical production. She is completing her final year pursuing a Bachelor of Science in Game Design with a minor in Computer Science - Game Technology. Outside of work, she is slowly picking her way through an extensive gaming backlog, currently tackling Diablo 4 and Destiny 2. When she is not furiously looking at 3 monitors (which still isn't enough) she can be found reading or playing with her Bengal cat, Midas!",
             "image": "headshots/andrea.jpg"
+        },
+        {
+            "name": "Amanda Lardner",
+            "title": "Art Lead",
+            "description": "Amanda Lardner is a character artist from Saint Louis, Missouri. Her focus is humanoid character art and takes inspiration from various story driven games and artists across the internet.  In her free time she likes creating intricate nail art and watching various Youtube channels.",
+            "image": "headshots/amanda.jpg"
+        },
+        {
+            "name": "Jacqueline Heisel",
+            "title": "Asset Team Lead",
+            "description": "Jacqueline Heisel is a Game Design student at Bradley University. In her video game-based classes she focuses on production and game design. She also enjoys making tabletop games that physically bring people together to bond and share an experience. Outside of Game Design she's a part of Bradley Univeristy's Speech Team and Improv Troupe. Be warned: she will take any opportunity to talk about robotics.",
+            "image": "headshots/jaq.jpg"
         },
         {
             "name": "Kyle Kotovsky",
@@ -31,28 +43,52 @@
             "image": "headshots/nickr.jpg"
         },
         {
-            "name": "Jacqueline Heisel",
-            "title": "Asset Team Lead",
-            "description": "Jacqueline Heisel is a Game Design student at Bradley University. In her video game-based classes she focuses on production and game design. She also enjoys making tabletop games that physically bring people together to bond and share an experience. Outside of Game Design she's a part of Bradley Univeristy's Speech Team and Improv Troupe. Be warned: she will take any opportunity to talk about robotics.",
-            "image": "headshots/jaq.jpg"
-        },
-        {
-            "name": "Amanda Lardner",
-            "title": "Art Lead",
-            "description": "Amanda Lardner is a character artist from Saint Louis, Missouri. Her focus is humanoid character art and takes inspiration from various story driven games and artists across the internet.  In her free time she likes creating intricate nail art and watching various Youtube channels.",
-            "image": "headshots/amanda.jpg"
-        },
-        {
             "name": "Marissa Moser",
             "title": "Programming Lead Assistant",
             "description": "Marissa Moser is currently studying Game Design at Bradley University with minors in Computer Science and Creative Writing. She has a passion for programming, specifically designing and building systems and tools. Since discovering this passion Marissa has spent her time on various teams to produce many games and experiences during the years of her study using Unity and Unreal Engine. When she is not programming, Marissa loves to read, work on her castle build in Minecraft, and play various other sandbox or puzzle games.",
             "image": "headshots/marissa.jpeg"
         },
         {
-            "name": "Brad Dixon",
+            "name": "Elijah Vroman",
             "title": "asd",
             "description": "dfs",
             "image": "fsadf"
+        },
+        {
+            "name": "Nick Grinstead",
+            "title": "Programmer",
+            "description": "Nick Grinstead is currently studying Game Design at Bradley University. He works primarily as a game programmer, focusing on systems and UI programming. Nick enjoys playing RPG and Action games as inspiration for his work. When not working on games, he enjoys drawing and going for walks. Nick is drawn to game development due to their uniqueness as an interactive medium and seeks to craft experiences where players get to tell their own stories.",
+            "image": "headshots/nickg.jpg"
+        },
+        {
+            "name": "Mark Hanson",
+            "title": "Programmer",
+            "description": "Mark Hanson is a person who enjoys programming the gameplay elements of a game. Physics, puzzles, or anything to do with numbers he finds joy. Making video games has always been a dream of his since when he was younger so often he will spend multiple hours on something per day out of enjoyment of the process. He is a person of big dreams and bigger aspirations as shown in all of his previous titles.",
+            "image": "headshots/mark.jpg"
+        },
+        {
+            "name": "Brad Dixon",
+            "title": "Designer",
+            "description": "Brad Dixon is a current student enrolled at Bradley University for Game Design. He mainly works as a designer brainstorming concepts about what to include in the game. He also goes in-engine to add the works made by team members into the game. He first started making games in order to create entertaining games that others could enjoy. When not working on games, he can be seen playing tennis and Dungeons & Dragons, or he could be doing just about anything as long as it’s with friends. In his spare time, he also volunteers and helps out others.",
+            "image": "headshots/brad.jpg"
+        },
+        {
+            "name": "Caelie Joyner",
+            "title": "VFX Artist",
+            "description": "Caelie Joyner is a VFX artist at Placebo Entertainment, dabbling in concept art on the side. She is a rising senior at Bradley University in Peoria, IL. When she is not studying or adding polish to games, she can be found spacing out, replaying her favorite games, or attempting to bake something.",
+            "image": "headshots/caelie.jpg"
+        },
+        {
+            "name": "Charlotte Tolly",
+            "title": "UX Designer",
+            "description": "Charlotte is an undergraduate student with a passion for design (including designing the website you're reading right now!) and creative work. She's been telling stories and making art since she was a small child, and never quite grew out of playing pretend. In her free time, you can find her scouring for the perfect font, wearing graphic eyeliner, and hosting movie marathons.",
+            "image": "headshots/charlotte.jpeg"
+        },
+        {
+            "name": "Colin Wilcox",
+            "title": "General Artist",
+            "description": "Colin Wilcox is a student at Bradley University studying Game Art. He works pretty evenly between creating 2D and 3D art, and spends frequent time playing video games both for inspiration and for leisure. Outside of his work, Colin is a lover of board games both simple and complex, and TTRPGs like Dungeons and Dragons. He enjoys and studies Game Art specifically due to his strong belief that video games can be art, and how the art of a video game will stick with players far longer than if the art had stood on its own.",
+            "image": "headshots/colin.jpg"
         },
         {
             "name": "Hayden Huber",
@@ -69,44 +105,8 @@
         {
             "name": "Alec Pizziferro",
             "title": "Web Programmer",
-            "description": "dfs",
-            "image": "fsadf"
-        },
-        {
-            "name": "Elijah Vroman",
-            "title": "asd",
-            "description": "dfs",
-            "image": "fsadf"
-        },
-        {
-            "name": "Charlotte Tolly",
-            "title": "UX Designer",
-            "description": "Charlotte is an undergraduate student with a passion for design (including designing the website you're reading right now!) and creative work. She's been telling stories and making art since she was a small child, and never quite grew out of playing pretend. In her free time, you can find her scouring for the perfect font, wearing graphic eyeliner, and hosting movie marathons.",
-            "image": "headshots/charlotte.jpeg"
-        },
-        {
-            "name": "Caelie Joyner",
-            "title": "VFX Artist",
-            "description": "Caelie Joyner is a VFX artist at Placebo Entertainment, dabbling in concept art on the side. She is a rising senior at Bradley University in Peoria, IL. When she is not studying or adding polish to games, she can be found spacing out, replaying her favorite games, or attempting to bake something.",
-            "image": "headshots/caelie.jpg"
-        },
-        {
-            "name": "Mark Hanson",
-            "title": "Programmer",
-            "description": "Mark Hanson is a person who enjoys programming the gameplay elements of a game. Physics, puzzles, or anything to do with numbers he finds joy. Making video games has always been a dream of his since when he was younger so often he will spend multiple hours on something per day out of enjoyment of the process. He is a person of big dreams and bigger aspirations as shown in all of his previous titles.",
-            "image": "headshots/mark.jpg"
-        },
-        {
-            "name": "Nick Grinstead",
-            "title": "Programmer",
-            "description": "Nick Grinstead is currently studying Game Design at Bradley University. He works primarily as a game programmer, focusing on systems and UI programming. Nick enjoys playing RPG and Action games as inspiration for his work. When not working on games, he enjoys drawing and going for walks. Nick is drawn to game development due to their uniqueness as an interactive medium and seeks to craft experiences where players get to tell their own stories.",
-            "image": "headshots/nickg.jpg"
-        },
-        {
-            "name": "Colin Wilcox",
-            "title": "General Artist",
-            "description": "dfs",
-            "image": "headshots/colin.jpg"
+            "description": "Alec Pizziferro is a software developer who focuses in VR development. He specializes in physics-based mechanics and loves to teach himself all sorts of things, from engine programming and 3D renderering to carpentry and electronics. Alec has been working in the games industry for 4 years, and has mastered many tools. Outside of tech, Alec loves aquascaping and all things fishkeeping, especially keeping angelfish.",
+            "image": "headshots/alec.jpg"
         }
     ]
 }
