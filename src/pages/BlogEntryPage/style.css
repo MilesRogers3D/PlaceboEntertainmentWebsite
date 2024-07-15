@@ -23,7 +23,7 @@ body{
 
 .blog-paragraph{
      color:white;
-     font-size: min(20px, 4vw);
+     font-size: min(20px, 7vw);
      line-height: min(24px, 7vw);
      letter-spacing: 0%;
      font-family: "Urbanist";
