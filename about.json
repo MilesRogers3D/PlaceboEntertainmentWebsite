@@ -91,6 +91,12 @@
             "image": "headshots/colin.jpg"
         },
         {
+            "name" : "Drew Mulacek",
+            "title" : "General Artist",
+            "description" : "Drew Mulacek is a digital artist studying at Bradley University. His focus is 2D digital painting as well as making 3D prop art. He takes inspiration from comic books and enjoys recreating album covers in his style. In his free time he likes to play basketball and video games with friends.",
+            "image" : "headshots/drew.jpg"
+        },
+        {
             "name": "Hayden Huber",
             "title": "UI UX Designer",
             "description": "Hayden Huber is a senior at Bradley University, with a major in UI/UX design and a minor in Game Design. He is from Flower Mound Texas, and loves horror games, exercise, and music. He regularly participates on campus as a tour guide, and is an active member in the Fencing club, Improv club, and UX club. Hayden loves UI design because he sees it like a puzzle, trying to find the best way to blend captivating visuals with functionality and clarity. Hayden dreams of being a UI designer at a games studio in the future, working on the same kind of projects that have brought him so much joy and excitement throughout his own life.",
