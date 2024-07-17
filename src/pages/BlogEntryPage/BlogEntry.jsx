@@ -39,6 +39,9 @@ export const BlogEntry = ({entry_file}) => {
                     }, 
                     img(props){
                          return <img {...props} className="blog-image" />
+                    },
+                    li(props){
+                         return <li {...props} className="blog-list"/>
                     }
                }} rehypePlugins={[rehypeRaw]}>{foundMDPage}</Markdown>
           </div>

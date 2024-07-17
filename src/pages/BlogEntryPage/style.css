@@ -36,6 +36,11 @@ body{
      white-space: pre-line;
 }
 
+.blog-list{
+     color:white;
+     font-family: "Urbanist";
+}
+
 .blog-entry-button{
      cursor: pointer;
      background-color: transparent;
