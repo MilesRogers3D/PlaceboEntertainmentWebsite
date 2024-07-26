@@ -8,12 +8,17 @@
 }
 
 .work-container {
-     background-image: url("/public/liquid3.jpg");
-     background-size: cover;
+     background-image: none;
+     /* background-attachment: fixed; */
+     background-position: center;
      background-repeat: no-repeat;
-     height: 100vh;
+     background-size: cover;
+     height: 350px;
      width: 100%;
-     display: table;
+}
+
+.work-logo {
+     width: 100%;
 }
 
 .work-title {
@@ -24,13 +29,63 @@
      line-height: min(8vw, 80px, 8vh);
      font-optical-sizing: auto;
      font-style: normal;
+     text-transform: uppercase;
+     text-align: center;
+     margin: auto;
+     width: 80%;
+     margin-top: 25%;
+     /* position: fixed; */
+     /* left: 50%;
+     transform: translateX(-50%); */
+}
+
+@keyframes scroll-watcher {
+     to { scale: 1 1; }
 }
 
 .work-slogan {
      color: #ffffff;
      font-family: "Urbanist";
-     font-size: min(4vw, 40px);
-     line-height: min(6vw, 60px);
+     font-size: min(6vw, 60px);
+     line-height: min(8vw, 80px);
+     font-weight: 800;
+     text-transform: uppercase;
+     text-align: center;
+     margin: auto;
      align-self: center;
      font-optical-sizing: auto;
+}
+
+.work-copy{
+     color: #fff;
+     font-family: "Urbanist";
+     font-size: 24px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 30px;
+     text-align: left;
+}
+
+.announcement-container {
+     width: 80%;
+     text-align: center;
+     margin: auto;
+     align-self: center;
+     margin-bottom: 8%;
+}
+
+.wishlist-button {
+     width: 80%;
+     height: 60px;
+     justify-content: center;
+     align-items: center;
+     border-radius: 100px;
+     border: 1px solid rgba(60, 106, 166, 0.50);
+     background: #F2958D;
+     color: #fff;
+     text-align: center;
+     font-size: 30px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 16px;
 }
