@@ -75,7 +75,7 @@
 }
 
 .wishlist-button {
-     width: 80%;
+     width: 85%;
      height: 60px;
      justify-content: center;
      align-items: center;
@@ -87,5 +87,5 @@
      font-size: 30px;
      font-style: normal;
      font-weight: 400;
-     line-height: 16px;
+     line-height: 25px;
 }

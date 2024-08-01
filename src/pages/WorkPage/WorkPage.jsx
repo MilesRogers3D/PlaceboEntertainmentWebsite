@@ -35,10 +35,10 @@ export const WorkPage = () => {
                <AnimationOnScroll animateIn="animate__fadeIn" className="announcement-container">
                     <h2 className="work-slogan">Coming to a galaxy near you</h2>
                     <br></br>
-                    <p className="work-copy">In a galaxy not too far from our own, lies the edge of reality as we know it. The Marion, the border surrounding all existence. For millenia, it has been feared by the Sectoria Collective. After all, ships go in, and nothing comes out. Until now.</p>
-                    <p className="work-copy">You are the youngest human astronaut in the history of Sectorian civilization; and have now been selected to join an elite crew tasked with journeying to and back from the Marion.</p>
-                    <p className="work-copy">There’s only one problem. It appears your ship is stuck in a time loop, and you’re the only one who knows it. Through a series of puzzles, interactions with a colorful cast of alien characters, and mini-games, you’ll be challenged to save yourself and your crew before it's too late. Will you find out what’s causing the loop? Learn about the edge of reality? Make friends across the universe?</p>
-                    <p className="work-copy">Anything is possible...Beyond the Marion!</p>
+                    <p className="work-copy">Bordering a collection of galaxies, far beyond our reach, lies the edge of reality as we know it. For millennia, the Sectorian Collective has feared The Marion, the barrier surrounding all existence. After all, we know nothing about The Marion. Until now.</p>
+                    <p className="work-copy">You are the youngest human astronaut in the history of Sectorian civilization; and have now been selected to join an elite crew. You are tasked with journeying to and back from the Marion to answer its call from beyond.</p>
+                    <p className="work-copy">Caught between reality and non-reality, your ship is stuck in a time loop, and you’re the only one aware of it. By assisting a colorful cast of aliens across a series of puzzles and mini-games, you’ll be challenged to save yourself and your crew before it's too late. Will you learn what lies beyond the edge of reality? Perhaps make friends across the universe? Or will you be caught in its loop forever?</p>
+                    <p className="work-copy">Anything is possible...Beyond the Marion! </p>
                     <br></br>
                     <button className="wishlist-button"><a>Wishlist on Steam!</a></button>
                </AnimationOnScroll>
