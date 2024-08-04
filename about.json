@@ -113,6 +113,12 @@
             "title": "Web Programmer",
             "description": "Alec Pizziferro is a software developer who focuses in VR development. He specializes in physics-based mechanics and loves to teach himself all sorts of things, from engine programming and 3D renderering to carpentry and electronics. Alec has been working in the games industry for 4 years, and has mastered many tools. Outside of tech, Alec loves aquascaping and all things fishkeeping, especially keeping angelfish.",
             "image": "headshots/alec.jpg"
+        },
+        {
+            "name": "Nicole Lardner",
+            "title" : "Marketing Coordinator",
+            "description": "Nicole is a strategic communications graduate student at the University of Missouri-Columbia. She has previously worked as a copywriter and social media content creator for various businesses in the Columbia area. In her free time, Nicole loves to scroll Tik Tok, listen to true crime podcasts, and thrift!",
+            "image": "headshots/nicole.png"
         }
     ]
 }
