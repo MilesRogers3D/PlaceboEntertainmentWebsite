@@ -1,6 +1,7 @@
 .about-outer {
      height: 100vh;
      width: 100%;
+     background-color: #000D27;
 }
 
 .about-container {
@@ -18,6 +19,7 @@
      border-collapse: collapse;
      table-layout: fixed;
      flex-wrap: wrap;
+     background-color: #000D27;
 }
 
 

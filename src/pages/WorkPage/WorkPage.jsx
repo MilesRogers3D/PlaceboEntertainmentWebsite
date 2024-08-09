@@ -1,52 +1,70 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import "./style.css";
 import "animate.css/animate.min.css";
-import { AnimationOnScroll } from "react-animation-on-scroll";
-import { useEffect } from "react";
+import { motion, useScroll, useSpring, useTransform, MotionValue } from "framer-motion";
 
 export const WorkPage = () => {
      // const [scrollPastIntro, setScrollPastIntro] = useState(false);
      // const header = !scrollPastIntro ? <h1 className="work-title">Placebo entertainment proudly presents...</h1> : <></>;
+     const ref = useRef(null);
+     const {scrollYProgress} = useScroll({target: ref});
 
-     // useEffect(() => {
-     //      const onScroll = () => {
-     //           checkScroll();
-     //      }
-     //      window.removeEventListener('scroll', onScroll);
-     //      window.addEventListener('scroll', onScroll, { passive: true });
-     //      return () => window.removeEventListener('scroll', onScroll);
-     // });
+     useEffect(() => {
+          const onScroll = () => {
+               checkScroll();
+          }
+          window.removeEventListener('scroll', onScroll);
+          window.addEventListener('scroll', onScroll, { passive: true });
+          return () => window.removeEventListener('scroll', onScroll);
+     });
 
-     // const checkScroll = () => {
-     //      let dist = window.scrollY / (document.body.offsetHeight - window.innerHeight);
-     //      console.log(dist);
-     //      setScrollPastIntro(dist >= 0.10);
-     // }
+
+     const checkScroll = () => {
+          let dist = window.scrollY / (document.body.offsetHeight - window.innerHeight);
+          if (dist > 0.55) {
+               setCurrentBackgroundStyle("work-outer-visible");
+               document.body.style.backgroundColor = "#EFF1F3"
+          }
+          else {
+               document.body.style.backgroundColor = "#000D27";
+               setCurrentBackgroundStyle("work-outer");
+          }
+     }
+
+
      const [backgroundStyle, setCurrentBackgroundStyle] = useState();
 
+     const transition = {
+          visible: { opacity: 1, transition: { duration: 1 } },
+          hidden: { opacity: 0, transition: { duration: 1 } }
+     };
+     const transitionExtended = {
+          visible: { opacity: 1, transition: { duration: 2.5 } },
+          hidden: { opacity: 0, transition: { duration: 2.5 } }
+     };
 
-     function onLogoEnter(e){
-          setCurrentBackgroundStyle("work-outer");
+     const transitionMedium = {
+          visible: { opacity: 1, transition: { duration: 2 } },
+          hidden: { opacity: 0, transition: { duration: 2 } }
+     };
+
+     function useParallax(value, distance){
+          return useTransform(value, [0,1], [-distance, distance]);
      }
 
-     function onLogoExit(e){
-
-          setCurrentBackgroundStyle(null);
-     }
-     
      return (
           <div className={backgroundStyle}>
-               <AnimationOnScroll animateIn="animate__fadeIn">
+               <motion.div variants={transition} initial="hidden" whileInView="visible">
                     <h1 className="work-title">Placebo entertainment proudly presents...</h1>
-               </AnimationOnScroll>
+               </motion.div>
                <div className="work-container"></div>
-               <AnimationOnScroll animateIn="animate__fadeIn" animateOut="animate__fadeOut" afterAnimatedIn={onLogoEnter} afterAnimatedOut={onLogoExit} delay={0}>
+               <motion.div variants={transitionMedium} initial="hidden" whileInView="visible">
                     <div className="work-logo-container">
                          <img src="beyondthemariontitle3.png" className="work-logo"></img>
                     </div>
-               </AnimationOnScroll>
-               <div className="work-container"></div>
-               <AnimationOnScroll animateIn="animate__fadeIn" className="announcement-container">
+               </motion.div>
+               <div className="work-container2"></div>
+               <motion.div variants={transitionExtended} initial="hidden" whileInView="visible" className="announcement-container">
                     <h2 className="work-slogan">COMING TO A GALAXY NEAR YOU IN FALL 2024</h2>
                     <br></br>
                     <p className="work-copy">Bordering a collection of galaxies, far beyond our reach, lies the edge of reality as we know it. For millennia, the Sectorian Collective has feared The Marion, the barrier surrounding all existence. After all, we know nothing about The Marion. Until now.</p>
@@ -55,8 +73,9 @@ export const WorkPage = () => {
                     <p className="work-copy">Anything is possible...Beyond the Marion! </p>
                     <br></br>
                     <button className="wishlist-button"><a>Wishlist on Steam!</a></button>
-               </AnimationOnScroll>
+               </motion.div>
           </div>
+
      );
 };
 

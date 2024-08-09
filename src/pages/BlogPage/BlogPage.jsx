@@ -37,7 +37,7 @@ export const BlogPage = () => {
 
 
      return (
-          <>
+          <div className="blog-background">
                <h1 className="blog-title">DEVELOPER'S BLOG</h1>
                <div className="blog-outer">
                     <div className="blog-entry-container">
@@ -54,7 +54,7 @@ export const BlogPage = () => {
                          <p className="blog-sidebar-paragraph">Or don't. You have free will. You do have free will, right?</p>
                     </div>
                </div>
-          </>
+          </div>
 
      );
 };

@@ -10,7 +10,9 @@
           "body sidebar" 1fr / 70% 30%;
 }
 
-
+.blog-background{
+     background-color: #000D27;
+}
 
 .blog-title {
      font-family: "League Spartan";

@@ -10,17 +10,20 @@ import { Routes, Route } from "react-router-dom";
 import LoadingPage from './pages/LoadingPage/LoadingPage';
 
 function App() {
+     const setBodyColor = () => {
+          document.body.style.backgroundColor = "#000D27";
+     }
      return (
           <>
                <GlobalNavbar/>
                <Routes>
-                    <Route path="/" element={<HomePage />} />
-                    <Route path="about" element={<AboutPage />} />
-                    <Route path="home" element={<HomePage />} />
-                    <Route path="work" element={<WorkPage />} />
-                    <Route path="blog" element={<BlogPage />} />
-                    <Route path="contact" element={<ContactPage />} />
-                    <Route path="loading" element={<LoadingPage />} />
+                    <Route path="/" element={<HomePage />} onLeave={setBodyColor()} onEnter={setBodyColor()}/>
+                    <Route path="about" element={<AboutPage />} onLeave={setBodyColor()} onEnter={setBodyColor()}/>
+                    <Route path="home" element={<HomePage />} onLeave={setBodyColor()} onEnter={setBodyColor()}/>
+                    <Route path="work" element={<WorkPage />} onLeave={setBodyColor()} onEnter={setBodyColor()}/>
+                    <Route path="blog" element={<BlogPage />} onLeave={setBodyColor()} onEnter={setBodyColor()}/>
+                    <Route path="contact" element={<ContactPage />} onLeave={setBodyColor()} onEnter={setBodyColor()}/>
+                    <Route path="loading" element={<LoadingPage />} onLeave={setBodyColor()} onEnter={setBodyColor()}/>
                </Routes>
           </>
      );

@@ -1,5 +1,9 @@
 .work-outer {
-     
+     background-color: #000D27;
+}
+
+.work-outer-visible{
+     background-color: #EFF1F3;
 }
 
 
@@ -13,11 +17,24 @@
      width: 100%;
 }
 
+.work-container2 {
+     /* background-image: none; */
+     /* background-attachment: fixed; */
+     background-color: #EFF1F3;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 350px;
+     width: 100%;
+}
+
 .work-logo-container {
      width: 100%;
      height: min-content;
      background-image: url("~/public/thevoid.GIF");
-     background-blend-mode: lighten;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
      align-items: center;
      background-color: #000d27;
      display: grid;
@@ -41,7 +58,8 @@
      text-align: center;
      margin: auto;
      width: 80%;
-     margin-top: 25%;
+     padding-top: 10%;
+     padding-bottom: 10%;
      /* position: fixed; */
      /* left: 50%;
      transform: translateX(-50%); */
@@ -52,7 +70,7 @@
 }
 
 .work-slogan {
-     color: #ffffff;
+     color: #000D27;
      font-family: "Urbanist";
      font-size: min(6vw, 60px);
      line-height: min(8vw, 80px);
@@ -65,7 +83,7 @@
 }
 
 .work-copy{
-     color: #fff;
+     color: #000D27;
      font-family: "Urbanist";
      font-size: 24px;
      font-style: normal;
@@ -80,6 +98,7 @@
      margin: auto;
      align-self: center;
      margin-bottom: 8%;
+     background-color: #EFF1F3;
 }
 
 .wishlist-button {
