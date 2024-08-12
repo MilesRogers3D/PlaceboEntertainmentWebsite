@@ -49,7 +49,7 @@ export const BlogPage = () => {
                          <h1 className="blog-sidebar-header">Our Socials</h1>
                          <a className="blog-sidebar-paragraph" href="https://x.com/placeboent">Twitter</a><br />
                          <a href="https://www.linkedin.com/company/placeboentertainment/" className="blog-sidebar-paragraph">Linkedin</a><br />
-                         <a className="blog-sidebar-paragraph">Anywhere Else</a><br />
+                         <a className="blog-sidebar-paragraph" href="https://www.tiktok.com/@placebo.entertain">TikTok</a><br />
                          <h1 className="blog-sidebar-header">Buy Our Stuff!</h1>
                          <p className="blog-sidebar-paragraph">Or don't. You have free will. You do have free will, right?</p>
                     </div>

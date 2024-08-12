@@ -1,34 +1,53 @@
 import { useState, useEffect, useRef } from "react";
 import "./style.css";
 import "animate.css/animate.min.css";
-import { motion, useScroll, useSpring, useTransform, MotionValue } from "framer-motion";
+import { motion} from "framer-motion";
 
 export const WorkPage = () => {
      // const [scrollPastIntro, setScrollPastIntro] = useState(false);
      // const header = !scrollPastIntro ? <h1 className="work-title">Placebo entertainment proudly presents...</h1> : <></>;
      const ref = useRef(null);
-     const {scrollYProgress} = useScroll({target: ref});
 
      useEffect(() => {
           const onScroll = () => {
                checkScroll();
           }
+          
           window.removeEventListener('scroll', onScroll);
           window.addEventListener('scroll', onScroll, { passive: true });
           return () => window.removeEventListener('scroll', onScroll);
      });
 
+     const lerpColor = function(pFrom, pTo, pRatio) {
+          const ar = (pFrom & 0xFF0000) >> 16,
+                ag = (pFrom & 0x00FF00) >> 8,
+                ab = (pFrom & 0x0000FF),
+      
+                br = (pTo & 0xFF0000) >> 16,
+                bg = (pTo & 0x00FF00) >> 8,
+                bb = (pTo & 0x0000FF),
+      
+                rr = ar + pRatio * (br - ar),
+                rg = ag + pRatio * (bg - ag),
+                rb = ab + pRatio * (bb - ab);
+      
+          return `#${((rr << 16) + (rg << 8) + (rb | 0)).toString(16).padStart(6, '0').slice(-6)}`;
+      };
+
 
      const checkScroll = () => {
-          let dist = window.scrollY / (document.body.offsetHeight - window.innerHeight);
-          if (dist > 0.55) {
-               setCurrentBackgroundStyle("work-outer-visible");
-               document.body.style.backgroundColor = "#EFF1F3"
-          }
-          else {
-               document.body.style.backgroundColor = "#000D27";
-               setCurrentBackgroundStyle("work-outer");
-          }
+          const dist = Math.min((window.scrollY / (document.body.offsetHeight - window.innerHeight) * 2.5), 1);
+          // const [r, g, b] = [red*y*2, green*y*2, blue*y*2].map(Math.round);
+          document.body.style.backgroundColor = lerpColor(0x000D27, 0xEFF1F3, dist );
+          // if (dist > 0.75) {
+          //      setCurrentBackgroundStyle("work-outer-visible");
+          //      document.body.style.backgroundColor = "#EFF1F3"
+          // }
+          // else {
+          //      document.body.style.backgroundColor = "#000D27";
+          //      setCurrentBackgroundStyle("work-outer");
+          // }
+          
      }
 
 
@@ -44,16 +63,19 @@ export const WorkPage = () => {
      };
 
      const transitionMedium = {
-          visible: { opacity: 1, transition: { duration: 2 } },
-          hidden: { opacity: 0, transition: { duration: 2 } }
+          visible: { opacity: 1, transition: { duration: 1 } },
+          hidden: { opacity: 0, transition: { duration: 1 } }
      };
 
-     function useParallax(value, distance){
-          return useTransform(value, [0,1], [-distance, distance]);
-     }
 
      return (
-          <div className={backgroundStyle}>
+          <div className={backgroundStyle} dir="ltr">
+               <br></br>
+               <br></br>
+               <br></br>
+               <br></br>
+               <br></br>
+               <br></br>
                <motion.div variants={transition} initial="hidden" whileInView="visible">
                     <h1 className="work-title">Placebo entertainment proudly presents...</h1>
                </motion.div>
@@ -72,7 +94,7 @@ export const WorkPage = () => {
                     <p className="work-copy">Caught between reality and non-reality, your ship is stuck in a time loop, and you’re the only one aware of it. By assisting a colorful cast of aliens across a series of puzzles and mini-games, you’ll be challenged to save yourself and your crew before it's too late. Will you learn what lies beyond the edge of reality? Perhaps make friends across the universe? Or will you be caught in its loop forever?</p>
                     <p className="work-copy">Anything is possible...Beyond the Marion! </p>
                     <br></br>
-                    <button className="wishlist-button"><a>Wishlist on Steam!</a></button>
+                    {/* <button className="wishlist-button"><a>Wishlist on Steam!</a></button> */}
                </motion.div>
           </div>
 
