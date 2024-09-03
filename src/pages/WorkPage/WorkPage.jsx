@@ -67,6 +67,9 @@ export const WorkPage = () => {
           hidden: { opacity: 0, transition: { duration: 1 } }
      };
 
+     const buttonOnClick = () => {
+          window.location.href = "https://placebo-entertainment.itch.io/beyond-the-marion";
+     }
 
      return (
           <div className={backgroundStyle} dir="ltr">
@@ -94,7 +97,7 @@ export const WorkPage = () => {
                     <p className="work-copy">Caught between reality and non-reality, your ship is stuck in a time loop, and you’re the only one aware of it. By assisting a colorful cast of aliens across a series of puzzles and mini-games, you’ll be challenged to save yourself and your crew before it's too late. Will you learn what lies beyond the edge of reality? Perhaps make friends across the universe? Or will you be caught in its loop forever?</p>
                     <p className="work-copy">Anything is possible...Beyond the Marion! </p>
                     <br></br>
-                    {/* <button className="wishlist-button"><a>Wishlist on Steam!</a></button> */}
+                    <button className="wishlist-button" onClick={buttonOnClick}>Avaliable on Itch.io!</button>
                </motion.div>
           </div>
 

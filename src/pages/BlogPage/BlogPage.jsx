@@ -51,7 +51,7 @@ export const BlogPage = () => {
                          <a href="https://www.linkedin.com/company/placeboentertainment/" className="blog-sidebar-paragraph">Linkedin</a><br />
                          <a className="blog-sidebar-paragraph" href="https://www.tiktok.com/@placebo.entertain">TikTok</a><br />
                          <h1 className="blog-sidebar-header">Buy Our Stuff!</h1>
-                         <p className="blog-sidebar-paragraph">Or don't. You have free will. You do have free will, right?</p>
+                         <a href="https://placebo-entertainment.itch.io/beyond-the-marion" className="blog-sidebar-paragraph">Itch.io</a><br />
                     </div>
                </div>
           </div>
