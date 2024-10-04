@@ -71,6 +71,10 @@ export const WorkPage = () => {
           window.location.href = "https://placebo-entertainment.itch.io/beyond-the-marion";
      }
 
+     const buttonOnClick2 = () => {
+          window.location.href = "https://store.steampowered.com/app/3210110/Beyond_the_Marion/";
+     }
+
      return (
           <div className={backgroundStyle} dir="ltr">
                <br></br>
@@ -97,7 +101,8 @@ export const WorkPage = () => {
                     <p className="work-copy">Caught between reality and non-reality, your ship is stuck in a time loop, and you’re the only one aware of it. By assisting a colorful cast of aliens across a series of puzzles and mini-games, you’ll be challenged to save yourself and your crew before it's too late. Will you learn what lies beyond the edge of reality? Perhaps make friends across the universe? Or will you be caught in its loop forever?</p>
                     <p className="work-copy">Anything is possible...Beyond the Marion! </p>
                     <br></br>
-                    <button className="wishlist-button" onClick={buttonOnClick}>Avaliable on Itch.io!</button>
+                    <button className="wishlist-button" onClick={buttonOnClick2}>Play on Steam!</button>
+                    <button className="wishlist-button" onClick={buttonOnClick}>Support the Devs!</button>
                </motion.div>
           </div>
 
